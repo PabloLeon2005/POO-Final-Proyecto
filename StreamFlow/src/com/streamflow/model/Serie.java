@@ -1,13 +1,32 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package com.streamflow.model;
 
-/**
- *
- * @author PC
- */
-public class Serie {
-    
+public class Serie extends Contenido {
+
+    private final int numeroTemporadas;
+
+    public Serie(int id, String titulo, String genero, Calidad calidad, int numeroTemporadas) {
+        super(id, titulo, genero, calidad);
+        this.numeroTemporadas = numeroTemporadas;
+    }
+
+    public int obtenerNumeroTemporadas() {
+        return numeroTemporadas;
+    }
+
+    @Override
+    public void reproducir() {
+        System.out.println("Reproduciendo serie '" + obtenerTitulo() + "' (" + numeroTemporadas
+                + " temporadas) en calidad " + obtenerCalidad() + "...");
+    }
+
+    @Override
+    public String obtenerDetalles() {
+        return "Serie: " + obtenerTitulo() + " | Genero: " + obtenerGenero()
+                + " | Temporadas: " + numeroTemporadas + " | Calidad: " + obtenerCalidad();
+    }
+
+    @Override
+    public String obtenerTipo() {
+        return "SERIE";
+    }
 }
