@@ -34,17 +34,9 @@ public abstract class Contenido implements Reproducible {
         return calidad;
     }
 
-    /**
-     * Cada subtipo construye su propia representacion textual con la
-     * informacion que le es relevante (duracion, temporadas, director, etc).
-     */
+
     public abstract String obtenerDetalles();
 
-    /**
-     * Identificador de tipo usado exclusivamente por la capa de persistencia
-     * para reconstruir el objeto concreto correcto al leer de SQLite.
-     * No se usa en ningun punto de la logica de negocio (Service/Controller),
-     * que siempre trabaja contra la referencia Contenido.
-     */
+
     public abstract String obtenerTipo();
 }
