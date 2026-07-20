@@ -1,13 +1,16 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package com.streamflow.service;
 
-/**
- *
- * @author PC
- */
-public class RecomendacionServiceImpl {
-    
+import com.streamflow.model.Contenido;
+
+import java.util.List;
+import java.util.stream.Collectors;
+
+public class RecomendacionServiceImpl implements RecomendacionService {
+
+    @Override
+    public List<Contenido> recomendarPorGenero(String genero, List<Contenido> catalogo) {
+        return catalogo.stream()
+                .filter(c -> c.obtenerGenero().equalsIgnoreCase(genero))
+                .collect(Collectors.toList());
+    }
 }

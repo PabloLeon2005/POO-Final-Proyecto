@@ -1,13 +1,9 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Interface.java to edit this template
- */
 package com.streamflow.service;
 
-/**
- *
- * @author PC
- */
+import com.streamflow.model.Calidad;
+import com.streamflow.model.Suscripcion;
+
 public interface SuscripcionService {
-    
+    double calcularCostoMensual(Calidad calidad);
+    Suscripcion generarSuscripcion(Calidad calidad);
 }

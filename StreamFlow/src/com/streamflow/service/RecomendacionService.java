@@ -1,13 +1,9 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Interface.java to edit this template
- */
 package com.streamflow.service;
 
-/**
- *
- * @author PC
- */
+import com.streamflow.model.Contenido;
+
+import java.util.List;
+
 public interface RecomendacionService {
-    
+    List<Contenido> recomendarPorGenero(String genero, List<Contenido> catalogo);
 }
