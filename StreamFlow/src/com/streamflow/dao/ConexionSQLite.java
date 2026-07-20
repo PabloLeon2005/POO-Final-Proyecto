@@ -10,7 +10,7 @@ public final class ConexionSQLite {
     private static ConexionSQLite instancia;
     private Connection conexion;
 
-    private Conexi onSQLite(String rutaBaseDatos) {
+    private ConexionSQLite(String rutaBaseDatos) {
         inicializar(rutaBaseDatos);
     }
 
