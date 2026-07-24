@@ -17,7 +17,6 @@ import com.streamflow.service.RecomendacionServiceImpl;
 import com.streamflow.service.SuscripcionService;
 import com.streamflow.service.SuscripcionServiceImpl;
 import com.streamflow.view.StreamFlowView;
-
 import java.util.Scanner;
 
 public class Main {
@@ -48,7 +47,6 @@ public class Main {
             System.out.println("6. Recomendar Contenido por Género");
             System.out.println("7. Salir");
             System.out.print("Seleccione una opción: ");
-
             int opcion;
             try {
                 opcion = Integer.parseInt(scanner.nextLine().trim());
