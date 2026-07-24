@@ -3,8 +3,9 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/PC/Documents/POO-FINAL-2026/StreamFlow/src/com/streamflow/Main.java</file>
-            <file>file:/C:/Users/PC/Documents/POO-FINAL-2026/StreamFlow/src/com/streamflow/controller/StreamFlowController.java</file>
+            <file>file:/C:/Users/A%20S%20U%20S/Desktop/p-final/POO-Final-Proyecto/StreamFlow/src/com/streamflow/dao/ContenidoDAOSQLite.java</file>
+            <file>file:/C:/Users/A%20S%20U%20S/Desktop/p-final/POO-Final-Proyecto/StreamFlow/src/com/streamflow/dao/UsuarioDAOSQLite.java</file>
+            <file>file:/C:/Users/A%20S%20U%20S/Desktop/p-final/POO-Final-Proyecto/StreamFlow/src/com/streamflow/dao/ContenidoDAO.java</file>
         </group>
     </open-files>
 </project-private>
